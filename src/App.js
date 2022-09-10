@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './styles';
+import { Expenditure, Feeding, Navbar, Records, Sales } from "./components";
 
 export default function App() {
   return (
@@ -9,7 +10,7 @@ export default function App() {
           Navbar
         </div>
       </div>
-      
+
     </div>
   )
 }
