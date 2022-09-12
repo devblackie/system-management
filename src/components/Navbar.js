@@ -6,9 +6,9 @@ export default function NavBar() {
     <div>
         <a href="/#">
         <NavLink className="nav-link " to='/records'>Records</NavLink>
-        {/* <NavLink className="nav-link " to='/sales'>Sales</NavLink>
+        <NavLink className="nav-link " to='/sales'>Sales</NavLink>
         <NavLink className="nav-link " to='/expenditure'>Expenditure</NavLink>
-        <NavLink className="nav-link " to='/feeding'>Feeding</NavLink> */}
+        <NavLink className="nav-link " to='/feeding'>Feeding</NavLink>
         </a>
     </div>
   );
