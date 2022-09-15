@@ -9,7 +9,7 @@ function CoursePage(){
     // const navigate = useNavigate()
 
     useEffect(() => {
-      fetch('/courses')
+      fetch('http://localhost:9292/courses')
       .then(r => r.json())
       .then(data => setAllCourses(data))
     }, []);
@@ -19,7 +19,7 @@ function CoursePage(){
     }
 
     function deleteCourse(id){
-      fetch(`/courses/${id}`,{
+      fetch(`http://localhost:9292/courses/${id}`,{
           method: "DELETE",
       })
       .then(r => r.json())

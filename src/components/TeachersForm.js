@@ -1,18 +1,18 @@
 import React from 'react';
-import './CourseApplication.css';
+// import './TeachersForm.css';
 import { useState } from 'react';
 
-function CourseApplication({handlePosting}) {
+function TeachersForm({handlePosting}){
   const [schoolData, setSchoolData] = useState({
-    course_name: '',
-    fees: '',
-    department: '',
-    course_duration: '',
+    name: '',
+    home_address: '',
+    specialisation: '',
+    salary_receiving: '',
   })
 
   function handleSubmit(e){
     e.preventDefault();
-    fetch(`/courses`,{
+    fetch(`http://localhost:9292/students/teachers`,{
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -25,59 +25,60 @@ function CourseApplication({handlePosting}) {
     })
 
     setSchoolData({
-        course_name: '',
-        fees: '',
-        department: '',
-        course_duration: '',
+        name: '',
+        home_address: '',
+        specialisation: '',
+        salary_receiving: '',
     })
 }
 
-  function handleChange(e){
-    setSchoolData({
-        ...schoolData, [e.target.name]: e.target.value,
-    });
-} 
+function handleChange(e){
+  setSchoolData({
+      ...schoolData, [e.target.name]: e.target.value,
+  });
+}  
+
   return (
-    <div className="container3">
-      <div className="contact-box1">
-        <div className="lefti"></div>
+    <div className="container2">
+      <div className="contact-box">
+        <div className="lefty"></div>
         <div className="right">
           <h2>Enroll Now</h2>
           <form>
             <input
               type='text'
-              name='course_name'
               required
+              name='name'
               className ="field"
-              placeholder='Course Name'
-              value={schoolData.course_name}
+              placeholder='Teacher Name'
+              value={schoolData.name}
               onChange={handleChange}
             ></input>
             <br />
             <input
-              type='number'
-              name='fees'
+              type='text'
               required
+              name='home_address'
               className='field'
-              placeholder='Fees'
-              value={schoolData.fees}
+              placeholder='Home Address'
+              value={schoolData.home_address}
               onChange={handleChange}
             ></input>
             <input
                type='text'
-               name='department'
-               placeholder="Department"
+               name='specialisation'
+               placeholder="Specialization"
                className='field'
-               value={schoolData.department}
+               value={schoolData.specialisation}
               onChange={handleChange}
             ></input>
            <input
-               type='number'
-               name='course_duration'
+               type='text'
                required
+               name='salary_receiving'
                className='field'
-               placeholder='Course Duration in Months'
-               value={schoolData.course_duration}
+               placeholder='Salary Received'
+               value={schoolData.salary_receiving}
               onChange={handleChange}
            ></input>
           <button className="btn2" onClick={handleSubmit}>Send</button>
@@ -88,4 +89,4 @@ function CourseApplication({handlePosting}) {
   )
 }
 
-export default CourseApplication;
+export default TeachersForm;

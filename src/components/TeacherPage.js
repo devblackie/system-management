@@ -6,7 +6,7 @@ const TeachersPage = () => {
   const [allTeachers, setAllTeachers] = useState([])
 
   useEffect(() => {
-    fetch('https://star-light-uni.herokuapp.com/teachers')
+    fetch('http://localhost:9292/teachers')
     .then(r => r.json())
     .then(data => setAllTeachers(data))
   }, []);
@@ -16,7 +16,7 @@ const TeachersPage = () => {
   }
 
   function deleteTeacher(id){
-    fetch(`https://star-light-uni.herokuapp.com/teachers/${id}`,{
+    fetch(`http://localhost:9292/teachers/${id}`,{
         method: "DELETE",
     })
     .then(r => r.json())

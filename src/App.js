@@ -1,12 +1,12 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import CoursePage from './CoursePage';
-import About from "./About"
-import ContactUs from "./ContactUs"
-import NavBar from './NavBar';
-import TeachersPage from './TeacherPage';
-import StudentPage from './StudentsPage';
-import Home from './Home';
+import CoursePage from './components/CoursePage';
+import About from "./components/About"
+import ContactUs from "./components/ContactUs"
+import NavBar from './components/NavBar';
+import TeachersPage from './components/TeacherPage';
+import StudentPage from './components/StudentPage';
+import Homee from './Homee';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <div>
       <NavBar />
       <Routes>
-        <Route exact path='/' element={<Home />} />
+        <Route exact path='/' element={<Homee />} />
         <Route exact path='/courses' element={<CoursePage />} />
         <Route exact path='/students' element={<StudentPage />} />
         <Route exact path='/teachers' element={<TeachersPage />} />

@@ -19,7 +19,7 @@ function StudentSpecific(){
     }
 
     useEffect(() => {
-        fetch(`/students/${id}`)
+        fetch(`http://localhost:9292/students${id}`)
         .then(r => r.json())
         .then(data => setStudentDetails(data))
     }, [])
@@ -27,7 +27,7 @@ function StudentSpecific(){
     console.log(studentDetails)
 
     function handleUpdateStudent() {
-        fetch(`https://star-light-uni.herokuapp.com/students/${id}`, {
+        fetch(`http://localhost:9292/students/${id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

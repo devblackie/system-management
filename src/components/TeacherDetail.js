@@ -52,7 +52,7 @@ function TeachersDetails({allTeachers, deleteTeacher}){
           {allTeachers.map((teacher) => (
             <StyledTableRow 
             key={teacher.id}
-            onClick={() => navigate(`/teachers/${teacher.id}`)}
+            onClick={() => navigate(`http://localhost:9292/teachers/${teacher.id}`)}
             style={{cursor: "pointer"}}
             >
               <StyledTableCell align="left">{teacher.id}</StyledTableCell>

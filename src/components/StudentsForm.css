@@ -5,7 +5,7 @@
 	font-family: 'Quicksand', sans-serif;
 }
 
-.containerr{
+.containerra{
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -15,19 +15,19 @@
 	padding: 20px 100px;
 }
 
-.containerr:after{
+.containerra:after{
 	content: '';
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: url("./images/pexels-polina-tankilevitch-4443162.jpg") no-repeat center;
+	background: url("../image/moringa-1000x552.jpg") no-repeat center;
 	background-size: cover;
 	filter: blur(50px);
 	z-index: -1;
 }
-.contact-boxx{
+.contact-boxxx{
 	max-width: 850px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -38,13 +38,13 @@
 	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
 }
 
-.lefty{
-	background: url("./images/pexels-polina-tankilevitch-4443162.jpg") no-repeat center;
+.leftyy{
+	background: url("../image/moringa-1000x552.jpg") no-repeat center;
 	background-size: cover;
 	height: 100%;
 }
 
-.righty{
+.rightyy{
 	padding: 25px 40px;
 }
 
@@ -58,7 +58,7 @@ h2:after{
 	content: '';
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 20%;
     transform: translateX(-50%);
     height: 4px;
     width: 50px;
@@ -66,7 +66,7 @@ h2:after{
     background-color: #3c6aaf;
 }
 
-.field1{
+.field{
 	width: 100%;
 	border: 2px solid rgba(0, 0, 0, 0);
 	outline: none;
@@ -77,7 +77,7 @@ h2:after{
 	transition: .3s;
 }
 
-.field1:hover{
+.field:hover{
 	background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -85,20 +85,20 @@ textarea{
 	min-height: 150px;
 }
 
-.btn1{
-	width: 100%;
-	padding: 0.5rem 1rem;
-	background-color: #3c6aaf;
-	color: #fff;
-	font-size: 1.1rem;
+.btn2{
+    width: 100%;
+    padding: .5rem 1rem;
+    font-size: 1.1rem;
 	border: none;
 	outline: none;
 	cursor: pointer;
 	transition: .3s;
+    background-color: #3c6aaf;
+    color: #fff;
 }
 
-.btn1:hover{
-    background-color: #27ae71;
+.btn2:hover{
+    background-color: #27ae60;
 }
 
 .field:focus{

@@ -10,9 +10,8 @@ function About(){
 					<h1>About Us</h1>
 				</div>
 				<div class="content">
-					<h3>This is us Star Light University</h3>
-					<p><em>“Your time is limited, so don't waste it living someone else's life.”– Steve Jobs</em></p>
-                    <p>We work hard to make sure that we give the best to Our Students even after graduating for it is our duty to see you prosper.</p>
+					<h3>Welcome to BrightGam College</h3>
+                    <p>We produce the best</p>
 					<div class="button">
 						<a href=" ">Read More</a>
 					</div>
@@ -24,7 +23,7 @@ function About(){
 				</div>
 			</div>
 			<div class="image-section">
-				<img src="https://images.pexels.com/photos/207692/pexels-photo-207692.jpeg?auto=compress&cs=tinysrgb&w=400" alt="" />
+				<img src="https://fastly.4sqi.net/img/general/600x600/349328_pCLWn3CiPJwmZcn34qPhYf7wwLsB7sQHNRnlRUjukQI.jpg" alt="" />
 			</div>
 		</div>
 	</div>
