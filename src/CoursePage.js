@@ -9,7 +9,7 @@ function CoursePage(){
     // const navigate = useNavigate()
 
     useEffect(() => {
-      fetch('https://star-light-uni.herokuapp.com/courses')
+      fetch('/courses')
       .then(r => r.json())
       .then(data => setAllCourses(data))
     }, []);
@@ -19,7 +19,7 @@ function CoursePage(){
     }
 
     function deleteCourse(id){
-      fetch(`https://star-light-uni.herokuapp.com/courses/${id}`,{
+      fetch(`/courses/${id}`,{
           method: "DELETE",
       })
       .then(r => r.json())

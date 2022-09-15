@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './CourseApplication.css';
 import { useState } from 'react';
 
@@ -12,7 +12,7 @@ function CourseApplication({handlePosting}) {
 
   function handleSubmit(e){
     e.preventDefault();
-    fetch(`https://star-light-uni.herokuapp.com/courses`,{
+    fetch(`/courses`,{
         method: "POST",
         headers: {
             "Content-Type": "application/json"
