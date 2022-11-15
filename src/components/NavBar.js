@@ -11,36 +11,29 @@ export default function NavBar() {
       </div>
 
       <div>
-        <a className="linkage">
-          <NavLink className="" to="/">
-            HOME
-          </NavLink>
-        </a>
-        <a className="linkage">
-          <NavLink className="" to="/courses">
-            COURSES
-          </NavLink>
-        </a>
-        <a className="linkage">
-          <NavLink className="" to="/students">
-            STUDENTS
-          </NavLink>
-        </a>
-        <a className="linkage">
-          <NavLink className="" to="/teachers">
-            TEACHERS
-          </NavLink>
-        </a>
-        <a className="linkage">
-          <NavLink className="" to="/about">
-            ABOUT
-          </NavLink>
-        </a>
-        <a className="linkage">
-          <NavLink className="" to="/contactus">
-            CONTACT US
-          </NavLink>
-        </a>
+        <NavLink className="" to="/">
+          <a href="/"> HOME</a>
+        </NavLink>
+
+        <NavLink className="" to="/courses">
+          <a href="/courses">COURSES</a>
+        </NavLink>
+
+        <NavLink className="" to="/students">
+          <a href="/students"> STUDENTS</a>
+        </NavLink>
+
+        <NavLink className="" to="/teachers">
+          <a href="/teachers">TEACHERS</a>
+        </NavLink>
+
+        <NavLink className="" to="/about">
+          <a href="">ABOUT</a>
+        </NavLink>
+
+        <NavLink className="" to="/contactus">
+          <a href="/contactus">CONTACT US</a>
+        </NavLink>
       </div>
     </nav>
   );

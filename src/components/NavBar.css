@@ -12,7 +12,9 @@ nav {
     align-items: flex-start;
     justify-content: flex-start;
     z-index: 11;
+    color: blue;
 }
-.linkage{
+a{
     text-decoration: none;
+    color: red;
 }
