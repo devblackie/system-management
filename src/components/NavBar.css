@@ -1,9 +1,18 @@
-*{
-    list-style: none;
-    text-decoration: none;
+* {
+  list-style: none;
+  text-decoration: none;
 }
 
-nav{
+nav {
+  display: flex;
+  position: sticky;
+}
+.logoname{
     display: flex;
-
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 11;
+}
+.linkage{
+    text-decoration: none;
 }
