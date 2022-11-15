@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import "./NavBar.css"
 
 export default function NavBar() {
-  const [navbar, setNavbar] = useState(false);
+ 
   return (
     <nav className="">
       <div className="logoname">
